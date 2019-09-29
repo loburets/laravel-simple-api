@@ -7,7 +7,7 @@ NOTE: isn't fully ready so far, just a frame
 
 It is an API prepared for front end internships. It uses the Laravel specific things like validation format in responses or OAuth from the Passport package to let newcomers view how the real application will work with the same technology stack
 
-Based on Laradock 8.0, see [https://laradock.io/documentation/] for more
+Based on Laradock 8.0, see https://laradock.io/documentation/ for more
 
 ## How to install
 
@@ -16,7 +16,7 @@ Requires Docker >= 17.12
 1. Clone this repo and go to `laradock` directory
 2. `docker-compose up -d nginx mysql`
 3. Add new string to your hosts file `127.0.0.1 laravel-api.test`
-4. Done! Use the [http://laravel-api.test/] address
+4. Done! Use the http://laravel-api.test/ address
 
 If you use windows also go to `laradock` directory, open .env and change the separator from ':' to ';'. You should have the following: `COMPOSE_PATH_SEPARATOR=;`
 
