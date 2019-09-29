@@ -18,9 +18,7 @@ Requires Docker >= 17.12
 3. Add new string to your hosts file `127.0.0.1 laravel-api.test`
 4. Done! Use the [http://laravel-api.test/] address
 
-If you use windows also go to `laradock` directory, open .env and change the separator from : to ;
-
-You should have the: `COMPOSE_PATH_SEPARATOR=;`
+If you use windows also go to `laradock` directory, open .env and change the separator from ':' to ';'. You should have the following: `COMPOSE_PATH_SEPARATOR=;`
 
 ## If you want to execute some command manually
 
