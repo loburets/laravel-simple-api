@@ -1,10 +1,11 @@
-# Basic Laravel API in Docker via Laradock
+# Laravel Simple API
+Very simple API for React or other Frontend eduction reasons, which can be run locally just by few commands
+
+NOTE: isn't fully ready so far, just a frame
 
 ## What is it
 
-This is an simple API for React or other Frontend eduction, which can be run locally just by few commands
-
-It uses the Laravel specific things like validation format in responses or OAuth from the Passport package to let newcomers know how the real ones can look
+It is an API prepared for front end internships. It uses the Laravel specific things like validation format in responses or OAuth from the Passport package to let newcomers view how the real application will work with the same technology stack
 
 Based on Laradock 8.0, see [https://laradock.io/documentation/] for more
 
@@ -21,6 +22,6 @@ If you use windows also go to `laradock` directory, open .env and change the sep
 
 You should have the: `COMPOSE_PATH_SEPARATOR=;`
 
-## If you want to execute something manually
+## If you want to execute some command manually
 
 `docker-compose exec --user=laradock workspace bash`
