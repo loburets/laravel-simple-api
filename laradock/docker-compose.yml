@@ -139,6 +139,7 @@ services:
         - backend
       links:
         - docker-in-docker
+      command: ["sh", "-c", "sh /var/www/init.sh"]
 
 ### PHP-FPM ##############################################
     php-fpm:
