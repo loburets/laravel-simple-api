@@ -12,12 +12,16 @@ See https://laradock.io/documentation/ for more
 ## How to install
 
 - Clone this repo `git clone git@github.com:loburets/laravel-simple-api.git`
-- Go to the Laradock directory `cd laradock` 
-- Run `docker-compose up -d nginx mysql`
+- Go to the Laradock directory `cd laravel-simple-api/laradock`
+- Run `docker-compose up -d nginx mysql && docker-compose logs -f --tail 20 workspace`
 - Add new string to your hosts file `127.0.0.1 laravel-api.test`
 - Done! Use the http://laravel-api.test/
 
 If you use windows also go to `laradock` directory, open .env and change the separator from ':' to ';'. You should have the following: `COMPOSE_PATH_SEPARATOR=;`
+
+## If you want reset everything
+
+`docker-compose down && docker-compose rm -v && rm -rf  ~/.laradock && docker-compose up -d nginx mysql && docker-compose exec --user=laradock workspace bash`
 
 ## If you want to execute some command manually
 
@@ -29,7 +33,3 @@ Or MySQL:
 
 `docker-compose exec --user=laradock mysql bash`
 `mysql -proot -uroot`
-
-To rebuild everything from zero:
-
-`docker-compose down && docker-compose rm -v && rm -rf  ~/.laradock && docker-compose up -d nginx mysql && docker-compose exec --user=laradock workspace bash`
