@@ -22,4 +22,15 @@ If you use windows also go to `laradock` directory, open .env and change the sep
 
 ## If you want to execute some command manually
 
+To run composer, artisan etc:
+
 `docker-compose exec --user=laradock workspace bash`
+
+Or MySQL:
+
+`docker-compose exec --user=laradock mysql bash`
+`mysql -proot -uroot`
+
+To rebuild everything:
+
+`docker-compose down && docker-compose rm -v && rm -rf  ~/.laradock && docker-compose up -d nginx mysql && docker-compose exec --user=laradock workspace bash`
