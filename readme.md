@@ -41,4 +41,5 @@ Or MySQL:
 - `cd docs`
 - `snowboard html -o index.html API.apib --watch -c config.yaml`
 
-![FireShot Capture 001 - Create Product - Laravel Simple API Documentation - laravel-api test](https://user-images.githubusercontent.com/5417461/66260806-7fd98680-e7e5-11e9-8335-150302f2c9f7.png)
+![FireShot Capture 001 - Create Product - Laravel Simple API Documentation - laravel-api test](https://user-images.githubusercontent.com/5417461/66260835-c9c26c80-e7e5-11e9-8f38-464d9e489d4f.png)
+
