@@ -32,4 +32,5 @@ To run composer, artisan etc:
 Or MySQL:
 
 `docker-compose exec --user=laradock mysql bash`
+
 `mysql -proot -uroot`
