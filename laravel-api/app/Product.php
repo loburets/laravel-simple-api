@@ -10,6 +10,12 @@ class Product extends Model
     const INACTIVE_STATUS = 'inactive';
     const SUSPENDED_STATUS = 'suspended';
 
+    const STATUSES = [
+        self::ACTIVE_STATUS,
+        self::INACTIVE_STATUS,
+        self::SUSPENDED_STATUS,
+    ];
+
     /**
      * The attributes that should be visible in arrays.
      *
@@ -17,6 +23,18 @@ class Product extends Model
      */
     protected $visible = [
         'id',
+        'name',
+        'description',
+        'status',
+        'free_shipping',
+    ];
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
         'name',
         'description',
         'status',

@@ -9,7 +9,7 @@ $factory->define(Product::class, function (Faker $faker) {
     return [
         'name' => Str::title($faker->safeColorName) . ' ' . $faker->word,
         'description' => $faker->realText(),
-        'status' => $faker->randomElement([Product::ACTIVE_STATUS, Product::INACTIVE_STATUS, Product::SUSPENDED_STATUS]),
+        'status' => $faker->randomElement(Product::STATUSES),
         'free_shipping' => $faker->boolean(),
     ];
 });
