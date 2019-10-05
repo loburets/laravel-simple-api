@@ -11,6 +11,6 @@ class ProductsSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Product::class, 3)->make();
+        factory(App\Product::class, 3)->create();
     }
 }
