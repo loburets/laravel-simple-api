@@ -5,11 +5,11 @@ Very simple API for React or other Frontend eduction reasons, which can be run l
 
 It is an laravel-based API prepared for front end internships. It uses the Laravel specific things like validation format in responses or OAuth from the Passport package to let newcomers view how the real Laravel application work
 
-Based on Laradock 8.0 and Requires Docker >= 17.12
-
-See https://laradock.io/documentation/ for more
+Based on Laradock 8.0, see https://laradock.io/documentation/ for more
 
 ## How to install
+
+Requires Docker >= 17.12
 
 - Clone this repo `git clone git@github.com:loburets/laravel-simple-api.git`
 - Go to the Laradock directory `cd laravel-simple-api/laradock`
@@ -40,3 +40,5 @@ Or MySQL:
 - `npm install -g snowboard`
 - `cd docs`
 - `snowboard html -o index.html API.apib --watch -c config.yaml`
+
+![FireShot Capture 001 - Create Product - Laravel Simple API Documentation - laravel-api test](https://user-images.githubusercontent.com/5417461/66260806-7fd98680-e7e5-11e9-8335-150302f2c9f7.png)
