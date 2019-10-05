@@ -16,10 +16,10 @@ use Illuminate\Http\Request;
 
 Route::group(['middleware' => ['api']], function () {
     Route::get('/products', 'ProductController@index');
-    Route::get('/products/{id}', 'ProductController@show');
+    Route::get('/products/{product}', 'ProductController@show');
     Route::post('/products', 'ProductController@store');
-    Route::patch('/products/{id}', 'ProductController@update');
-    Route::delete('/products/{id}', 'ProductController@destroy');
+    Route::patch('/products/{product}', 'ProductController@update');
+    Route::delete('/products/{product}', 'ProductController@destroy');
 });
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
