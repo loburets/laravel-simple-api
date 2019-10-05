@@ -1,0 +1,16 @@
+html:
+  playground:
+    enabled: true
+    env: local
+    environments:
+      local:
+        url: http://laravel-api.test/api
+#        auth:
+#          name: oauth2
+#          options:
+#            authorizeUrl: https://accounts.example.com/oauth/authorize
+#            tokenUrl: https://accounts.example.com/oauth/access_token
+#            callbackUrl: https://www.example.com
+#            clientId: <client-id>
+#            clientSecret: <client-secret>
+#            scopes: <scope-names>

@@ -12,5 +12,5 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return File::get(base_path() . '/docs/index.html');
 });

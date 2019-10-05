@@ -1,0 +1,108 @@
+FORMAT: 1A
+HOST: http://laravel-api.test/api
+
+# Laravel Simple API Documentation
+This is documentation for API endpoints of https://github.com/loburets/laravel-simple-api repository
+
+# Group Products
+This section groups product resources.
+
+## Products [/products]
+
++ Model (application/json)
+
+    ```json
+    {
+        "data": [
+            {
+                "id": 6,
+                "name": "Ila O'Conner",
+                "description": "There was a table, with a trumpet in one hand and a crash of broken glass. 'What a pity it wouldn't stay!' sighed the Lory, as soon as she spoke; 'either you or your head must be a lesson to you.",
+                "status": "active",
+                "free_shipping": 1
+            },
+            ...
+        ],
+        "meta": {
+            "entity_type": "Product",
+            "current_page": 1,
+            "from": 1,
+            "last_page": 2,
+            "path": "http://laravel-api.test/api/products",
+            "per_page": 15,
+            "to": 15,
+            "total": 26
+        },
+        "links": {
+            "first": "http://laravel-api.test/api/products?page=1",
+            "last": "http://laravel-api.test/api/products?page=2",
+            "prev": null,
+            "next": "http://laravel-api.test/api/products?page=2"
+        }
+    }
+    ```
+
+### Create Product [POST]
+Create a new product.
+
+<!-- include(product-request.apib) -->
+
++ Response 200
+
+    [Product][]
+
+### Retrieve all Products [GET]
+Retrieves all products.
+
++ Response 200
+
+    [Products][]
+
+## Product [/products/{id}]
+CRUD which doesn't require authorisation to make your first calls easier.
+
++ Parameters
+    + id (int) - ID of the Product
+
++ Model (application/json)
+
+    ```json
+    {
+        "data": {
+            "id": 12,
+            "name": "PaleTurquoise sapiente",
+            "description": "But if I'm Mabel, I'll stay down here! It'll be no chance of getting her hands up to Alice, and she dropped it hastily, just in time to be lost, as she could. The next thing was snorting like a.",
+            "status": "active",
+            "free_shipping": 0
+        }
+    }
+    ```
+
+### Retrieve Product [GET]
+Returns specific Product.
+
++ Response 200
+
+    [Product][]
+
+### Delete Product [DELETE]
+Removes specific Product.
+
++ Response 200
+
+    + Body
+
+        {
+            "data": {
+                "message": "Product has been deleted"
+            }
+        }
+
+### Update Product [PATCH]
+Updates specific Product.
+
+<!-- include(product-request.apib) -->
+
++ Response 200
+
+    [Product][]

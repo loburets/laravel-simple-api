@@ -1,0 +1,24 @@
++ Parameters
+    + name (string) - min-length:3, max-length:255
+    + description (string, optional) - just text
+    + `free_shipping` (boolean) - sitter should provide drop_off.
+    + status (enum[string], optional) - status of the product.
+        + Default: `active`
+        + Members
+            + `active`
+            + `inactive`
+            + `suspended`
+
++ Request
+
+    + Headers
+        Accept: application/json
+        Content-Type: application/json
+
+    + Body
+        {
+           "name": "abc",
+           "description": "Textual conten 2",
+           "free_shipping": false,
+           "status": "active"
+        }

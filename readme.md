@@ -15,7 +15,7 @@ See https://laradock.io/documentation/ for more
 - Go to the Laradock directory `cd laravel-simple-api/laradock`
 - Run `docker-compose up -d nginx mysql && docker-compose logs -f --tail 20 workspace`
 - Add new string to your hosts file `127.0.0.1 laravel-api.test`
-- Done! Use the http://laravel-api.test/
+- Done! See the http://laravel-api.test/
 
 If you use windows also go to `laradock` directory, open .env and change the separator from ':' to ';'. You should have the following: `COMPOSE_PATH_SEPARATOR=;`
 
@@ -34,3 +34,9 @@ Or MySQL:
 `docker-compose exec --user=laradock mysql bash`
 
 `mysql -proot -uroot`
+
+## To update documentation
+
+- `npm install -g snowboard`
+- `cd docs`
+- `snowboard html -o index.html API.apib --watch -c config.yaml`
