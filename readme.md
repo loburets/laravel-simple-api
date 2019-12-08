@@ -13,6 +13,7 @@ Requires Docker >= 17.12
 
 - Clone this repo `git clone git@github.com:loburets/laravel-simple-api.git`
 - Go to the Laradock directory `cd laravel-simple-api/laradock`
+- Ensure that your Docker daemon is run (click to your docker icon or something like that)
 - Run `docker-compose up -d nginx mysql && docker-compose logs -f --tail 20 workspace`
 - Add new string to your hosts file `127.0.0.1 laravel-api.test`
 - Done! See the http://laravel-api.test/
@@ -27,12 +28,13 @@ If you use windows also go to `laradock` directory, open .env and change the sep
 
 To run composer, artisan etc:
 
+`cd laravel-simple-api/laradock`
 `docker-compose exec --user=laradock workspace bash`
 
 Or MySQL:
 
+`cd laravel-simple-api/laradock`
 `docker-compose exec --user=laradock mysql bash`
-
 `mysql -proot -uroot`
 
 ## To update documentation

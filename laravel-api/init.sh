@@ -12,15 +12,21 @@ done
 php artisan db:seed
 
 echo ""
+echo ""
+echo ""
+echo ""
 echo "############################################"
 echo "###                                      ###"
-echo "###         Everything is done           ###"
+echo "###         API is ready to use!         ###"
 echo "###                                      ###"
-echo "###   Use the http://laravel-api.test/   ###"
+echo "###     Open http://laravel-api.test/    ###"
+echo "###       To see the documentation       ###"
 echo "###                                      ###"
 echo "############################################"
 echo ""
-
+echo ""
+echo ""
+echo ""
 
 # start workspace process
 /sbin/my_init
