@@ -1,6 +1,8 @@
 # Laravel Simple API
 Very simple API for React or other Frontend eduction reasons, which can be run locally just by few commands
 
+Naturally, no LLMs involved — they weren’t even in use back in 2019 when this repo was created.
+
 ## What is it
 
 It is an laravel-based API prepared for front end internships. It uses the Laravel specific things like validation format in responses or OAuth from the Passport package to let newcomers view how the real Laravel application work
